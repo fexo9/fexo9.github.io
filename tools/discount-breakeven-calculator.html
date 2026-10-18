@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Discount Breakeven Calculator — Digital Toolkit Store</title>
+<meta name="description" content="Free: a 10% discount at 40% margin needs 33% more sales to break even. Check your discount before it eats your profit.">
+<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;color:#2E1A2F;background:#fff;line-height:1.65}
+header{background:#2E1A2F;color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+header a{color:#E8DFF0;text-decoration:none}
+.wrap{max-width:720px;margin:0 auto;padding:28px 20px 60px}
+h1{font-size:1.9rem;line-height:1.25;color:#2E1A2F}
+h2{color:#7A4A7D;margin-top:36px}
+label{display:block;margin:16px 0 4px;font-weight:600}
+input{width:100%;padding:12px;font-size:1.1rem;border:2px solid #E8DFF0;border-radius:8px;box-sizing:border-box}
+button{background:#7A4A7D;color:#fff;border:0;padding:14px 28px;border-radius:8px;font-size:1.1rem;font-weight:600;cursor:pointer;margin-top:20px}
+.result{background:#F3EAF3;border-left:4px solid #7A4A7D;padding:18px;border-radius:6px;margin-top:24px;font-size:1.1rem}
+.warn{background:#FFF3E0;border-left:4px solid #E65100;padding:18px;border-radius:6px;margin-top:24px;font-size:1.1rem}
+.btn{display:inline-block;background:#7A4A7D;color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;margin:8px 8px 8px 0;font-weight:600}
+footer{margin-top:48px;padding-top:18px;border-top:1px solid #E8DFF0;color:#666;font-size:.95rem}
+footer a{color:#7A4A7D}</style></head>
+<body>
+<header><a href="../index.html">Digital Toolkit Store</a><a href="../index.html">All products</a></header>
+<div class="wrap">
+<h1>Free Discount Breakeven Calculator</h1>
+<p>A discount feels like growth — until it eats your profit. A 10% discount at 40% margin needs <strong>33.33% more sales</strong> just to break even. Check yours before you run the promo.</p>
+<label for="margin">Your margin % (after all costs, before the discount)</label>
+<input id="margin" type="number" value="40" min="1" max="99" step="0.1">
+<label for="discount">Discount % you are considering</label>
+<input id="discount" type="number" value="10" min="0" max="99" step="0.1">
+<label for="units">Current monthly units (optional)</label>
+<input id="units" type="number" value="100" min="1" step="1">
+<button onclick="calc()">Calculate</button>
+<div id="out"></div>
+<h2>Why this works</h2>
+<p>Profit per unit drops from your margin to (margin − discount). To earn the same total profit you must sell more units: required increase = discount ÷ (margin − discount). If the discount is bigger than your margin, every sale loses money — no volume fixes that.</p>
+<h2>Want the full check?</h2>
+<p>This calculator covers the breakeven. The full <a href="../products/promo-margin-guard.html">Promo Margin Guard</a> kit ($24) adds the fee stack, a promo planner, and an audit of past promos.</p>
+<p><a class="btn" href="../products/promo-margin-guard.html">See Promo Margin Guard</a></p>
+<footer><p>Digital Toolkit Store — verified claims only, honest limits stated, no fake reviews. Questions: <a href="https://t.me/Digitaltoolkitstore">Telegram</a> · <a href="mailto:poodepoo@gmail.com">poodepoo@gmail.com</a></p>
+<p><a href="../index.html">&larr; Back to all products</a></p></footer>
+</div>
+<script>
+function calc(){
+  var m=parseFloat(document.getElementById('margin').value),
+      d=parseFloat(document.getElementById('discount').value),
+      u=parseFloat(document.getElementById('units').value),
+      out=document.getElementById('out');
+  if(isNaN(m)||isNaN(d)||m<=0||d<0){out.innerHTML='<div class="warn">Enter a margin above 0 and a discount of 0 or more.</div>';return;}
+  if(d>=m){out.innerHTML='<div class="warn">At a '+d+'% discount on a '+m+'% margin, you lose money on every sale. No volume fixes that — lower the discount or raise the price.</div>';return;}
+  var inc=d/(m-d)*100, nu=u*(1+inc/100);
+  out.innerHTML='<div class="result">You need <strong>'+inc.toFixed(2)+'% more units</strong> to break even — '+u.toFixed(0)+' units becomes <strong>'+nu.toFixed(0)+' units</strong> at the same total profit.</div>';
+}
+</script>
+</body></html>
