@@ -6,13 +6,18 @@
 <title>Digital Toolkit Store — Real tools for real problems</title>
 <meta name="description" content="Digital Toolkit Store: decision systems, Excel toolkits and document kits for freelancers, small businesses and subcontractors. Verified claims, honest limits, no fake reviews.">
 <style>
-:root{--mauve:#8A5FA0;--plum:#2E1A3A;--lilac:#EDE7F3;--ink:#23202B;--mut:#5c5766;--line:#e3ddef;--bg:#FAF8FC;--card:#fff}
+:root{--mauve:#8A5FA0;--mauve-d:#744D8A;--plum:#2E1A3A;--lilac:#EDE7F3;--lilac2:#D9CDEA;--ink:#23202B;--mut:#5c5766;--line:#e3ddef;--bg:#FAF8FC;--card:#fff}
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
-a{color:var(--mauve)}header{background:var(--plum);color:#fff;padding:56px 20px 48px;text-align:center}
-header h1{margin:0 0 8px;font-size:42px;letter-spacing:-.5px}header p.tag{margin:0;font-size:20px;color:#d9cdea}
+a{color:var(--mauve)}
+header{background:var(--plum);color:#fff;padding:0 0 44px;text-align:center;position:relative;overflow:hidden}
+.pattern{height:10px;background:repeating-linear-gradient(45deg,var(--mauve) 0 10px,transparent 10px 20px),repeating-linear-gradient(-45deg,var(--mauve) 0 10px,transparent 10px 20px);opacity:.55}
+.logo{width:min(420px,80vw);height:auto;margin:34px auto 6px;display:block}
+header p.tag{margin:6px 0 0;font-size:21px;color:#fff;font-weight:700}
+header p.sub{color:#cdbfd9;max-width:660px;margin:12px auto 0;font-size:16px}
+header p.maker{color:#9b8aa8;font-size:13.5px;margin:18px 0 0;letter-spacing:.4px}
 .wrap{max-width:1060px;margin:0 auto;padding:0 20px}
-.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:-24px auto 32px}
-.promise div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:0 4px 18px rgba(46,26,58,.06)}
+.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:-24px auto 32px;position:relative}
+.promise div{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--mauve);border-radius:14px;padding:20px;box-shadow:0 4px 18px rgba(46,26,58,.06)}
 .promise h2{margin:0 0 6px;font-size:18px;color:var(--plum)}.promise p{margin:0;color:var(--mut);font-size:15px}
 h2.sec{font-size:26px;color:var(--plum);margin:36px 0 6px}.sub{color:var(--mut);margin:0 0 18px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -20,25 +25,27 @@ h2.sec{font-size:26px;color:var(--plum);margin:36px 0 6px}.sub{color:var(--mut);
 .card h3{margin:0 0 6px;font-size:18px;color:var(--plum)}.card p{margin:0 0 14px;color:var(--mut);font-size:14.5px;flex:1}
 .price{font-weight:700;color:var(--mauve);font-size:17px;margin-bottom:10px}
 .btn{display:inline-block;background:var(--mauve);color:#fff!important;text-decoration:none;padding:9px 16px;border-radius:9px;font-weight:600;font-size:14.5px;text-align:center}
-.btn:hover{background:#744d8a}.note{background:var(--lilac);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-top:32px;font-size:15px}
+.btn:hover{background:var(--mauve-d)}.note{background:var(--lilac);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-top:32px;font-size:15px}
 .note b{color:var(--plum)}footer{margin:40px 0 24px;text-align:center;color:var(--mut);font-size:14px}
 footer a{margin:0 8px}
-@media(max-width:800px){.promise,.grid{grid-template-columns:1fr}header h1{font-size:32px}}
+@media(max-width:800px){.promise,.grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <header>
+<div class="pattern"></div>
 <div class="wrap">
-<h1>Digital Toolkit Store</h1>
-<p class="tag">Real tools for real problems.</p>
-<p style="color:#b9aac8;max-width:640px;margin:14px auto 0">Decision systems, Excel toolkits and document kits for freelancers, small businesses and subcontractors. Every claim verified. Every limit stated. No fake reviews, ever.</p>
+<img class="logo" src="logo.svg" alt="Digital Toolkit Store logo" onerror="this.style.display='none'">
+<p class="tag">Tools that do the job. No hype, no filler, no fake proof.</p>
+<p class="sub">Decision systems, Excel toolkits and document kits for freelancers, small businesses and subcontractors. Built by one maker. Tested twice. Sold once — yours forever.</p>
+<p class="maker">DIGITAL TOOLKIT STORE &nbsp;·&nbsp; REAL TOOLS FOR REAL PROBLEMS</p>
 </div>
 </header>
 <main class="wrap">
 <section class="promise">
-<div><h2>No illusions</h2><p>Every number on a listing is verified against a real source. No invented stats, no fake proof.</p></div>
-<div><h2>No incomplete products</h2><p>Every product passes an independent file test before it goes on sale. If it fails, it does not ship.</p></div>
-<div><h2>No cheating</h2><p>No fake reviews, no fake sales, no guarantees we cannot keep. What you read is what you get.</p></div>
+<div><h2>No illusions</h2><p>Every number verified against a real source. Every limit stated on the page. If we can't prove it, we don't print it.</p></div>
+<div><h2>No half products</h2><p>Every product passes an independent file test before it goes on sale. If it fails, it does not ship. Period.</p></div>
+<div><h2>No cheating</h2><p>No fake reviews. No fake sales. No guarantees we can't keep. What you read is what you get.</p></div>
 </section>
 
 <h2 class="sec">Products</h2>

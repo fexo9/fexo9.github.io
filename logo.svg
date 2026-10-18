@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" role="img" aria-label="Digital Toolkit Store logo">
+  <!-- Mark: 8-point star (two overlapping squares) + DT monogram -->
+  <g>
+    <rect x="28" y="28" width="104" height="104" rx="14" fill="#8A5FA0"/>
+    <rect x="28" y="28" width="104" height="104" rx="14" fill="none" stroke="#2E1A3A" stroke-width="3" transform="rotate(45 80 80)"/>
+    <rect x="46" y="46" width="68" height="68" rx="10" fill="#2E1A3A"/>
+    <text x="80" y="95" font-family="system-ui, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF" text-anchor="middle">DT</text>
+    <circle cx="80" cy="80" r="62" fill="none" stroke="#C9AEE0" stroke-width="1.5" stroke-dasharray="3 5" opacity="0.8"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="180" y="78" font-family="system-ui, Arial, sans-serif" font-size="34" font-weight="800" fill="#2E1A3A" letter-spacing="-0.5">Digital Toolkit</text>
+  <text x="180" y="112" font-family="system-ui, Arial, sans-serif" font-size="34" font-weight="800" fill="#8A5FA0" letter-spacing="-0.5">Store</text>
+  <text x="182" y="138" font-family="system-ui, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#5C5766" letter-spacing="3.2">REAL TOOLS FOR REAL PROBLEMS</text>
+</svg>
