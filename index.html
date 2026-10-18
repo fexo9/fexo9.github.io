@@ -3,162 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital Toolkit Store — Practical Business Toolkits</title>
-<meta name="description" content="No-fluff toolkits for freelancers, creators, agencies, landlords and small business owners. Free samples on GitHub, full kits in the store.">
+<title>Digital Toolkit Store — Real tools for real problems</title>
+<meta name="description" content="Digital Toolkit Store: decision systems, Excel toolkits and document kits for freelancers, small businesses and subcontractors. Verified claims, honest limits, no fake reviews.">
 <style>
-  :root { --mauve:#8e6fb8; --mauve-dark:#6f4f9e; --bg:#faf8fd; --ink:#2b2440; --muted:#6f6685; --card:#ffffff; --line:#e8e2f2; }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
-  header { background:linear-gradient(135deg,var(--mauve-dark),var(--mauve)); color:#fff; padding:64px 24px 56px; text-align:center; }
-  header h1 { font-size:2.4rem; margin-bottom:8px; }
-  header p { opacity:.92; max-width:640px; margin:0 auto 24px; font-size:1.1rem; }
-  .btn { display:inline-block; background:#fff; color:var(--mauve-dark); font-weight:700; padding:12px 28px; border-radius:999px; text-decoration:none; margin:4px; }
-  .btn.ghost { background:transparent; color:#fff; border:2px solid #fff; }
-  .wrap { max-width:1024px; margin:0 auto; padding:48px 24px; }
-  h2 { font-size:1.6rem; margin-bottom:6px; }
-  .sub { color:var(--muted); margin-bottom:28px; }
-  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:20px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px; display:flex; flex-direction:column; }
-  .card h3 { font-size:1.08rem; margin-bottom:6px; }
-  .card p { color:var(--muted); font-size:.94rem; flex:1; margin-bottom:14px; }
-  .card .row { display:flex; gap:10px; }
-  .card a { flex:1; text-align:center; padding:10px; border-radius:10px; text-decoration:none; font-weight:600; font-size:.9rem; }
-  .buy { background:var(--mauve); color:#fff; }
-  .buy:hover { background:var(--mauve-dark); }
-  .free { border:1.5px solid var(--mauve); color:var(--mauve-dark); }
-  .tag { display:inline-block; font-size:.72rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--mauve-dark); background:#efe8fa; border-radius:6px; padding:3px 10px; margin-bottom:10px; }
-  .stores { display:flex; flex-wrap:wrap; gap:12px; margin-top:8px; }
-  .stores a { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 22px; text-decoration:none; color:var(--ink); font-weight:600; }
-  .stores a:hover { border-color:var(--mauve); color:var(--mauve-dark); }
-  footer { text-align:center; color:var(--muted); padding:36px 24px; font-size:.9rem; border-top:1px solid var(--line); }
-  footer a { color:var(--mauve-dark); }
+:root{--mauve:#8A5FA0;--plum:#2E1A3A;--lilac:#EDE7F3;--ink:#23202B;--mut:#5c5766;--line:#e3ddef;--bg:#FAF8FC;--card:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:var(--mauve)}header{background:var(--plum);color:#fff;padding:56px 20px 48px;text-align:center}
+header h1{margin:0 0 8px;font-size:42px;letter-spacing:-.5px}header p.tag{margin:0;font-size:20px;color:#d9cdea}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+.promise{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:-24px auto 32px}
+.promise div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:0 4px 18px rgba(46,26,58,.06)}
+.promise h2{margin:0 0 6px;font-size:18px;color:var(--plum)}.promise p{margin:0;color:var(--mut);font-size:15px}
+h2.sec{font-size:26px;color:var(--plum);margin:36px 0 6px}.sub{color:var(--mut);margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column}
+.card h3{margin:0 0 6px;font-size:18px;color:var(--plum)}.card p{margin:0 0 14px;color:var(--mut);font-size:14.5px;flex:1}
+.price{font-weight:700;color:var(--mauve);font-size:17px;margin-bottom:10px}
+.btn{display:inline-block;background:var(--mauve);color:#fff!important;text-decoration:none;padding:9px 16px;border-radius:9px;font-weight:600;font-size:14.5px;text-align:center}
+.btn:hover{background:#744d8a}.note{background:var(--lilac);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-top:32px;font-size:15px}
+.note b{color:var(--plum)}footer{margin:40px 0 24px;text-align:center;color:var(--mut);font-size:14px}
+footer a{margin:0 8px}
+@media(max-width:800px){.promise,.grid{grid-template-columns:1fr}header h1{font-size:32px}}
 </style>
 </head>
 <body>
-
 <header>
-  <h1>🧰 Digital Toolkit Store</h1>
-  <p>Practical, no-fluff toolkits for freelancers, creators, agencies, landlords &amp; small business owners. Try a free sample — upgrade when it earns its keep.</p>
-  <a class="btn" href="#samples">Free samples</a>
-  <a class="btn ghost" href="#kits">Full kits</a>
-</header>
-
-<div class="wrap" id="kits">
-  <h2>Featured kits</h2>
-  <p class="sub">Complete systems — templates, calculators, checklists, scripts. One-time payment, yours forever.</p>
-  <div class="grid">
-    <div class="card">
-      <span class="tag">Freelancers</span>
-      <h3>Proposal &amp; Contract Kit</h3>
-      <p>Price work with confidence: proposal template, client agreement, deposit &amp; payment terms, follow-up email sequence.</p>
-      <div class="row"><a class="buy" href="https://www.getly.store/product/proposal-contract-kit">$24 — Get it</a></div>
-    </div>
-    <div class="card">
-      <span class="tag">AI users</span>
-      <h3>AI Output QA &amp; Audit Toolkit</h3>
-      <p>Audit AI-generated work before it reaches your client: evidence log, risk scoring, release gate, blind-test pack.</p>
-      <div class="row"><a class="buy" href="https://www.getly.store/product/ai-output-qa-audit-toolkit">$24 — Get it</a></div>
-    </div>
-    <div class="card">
-      <span class="tag">Researchers</span>
-      <h3>Research &amp; Synthesis OS</h3>
-      <p>Turn messy sources into trusted answers: source grading (S1/S2/S3), extraction, cross-verification, quality gate.</p>
-      <div class="row"><a class="buy" href="https://www.getly.store/product/research-synthesis-os">$24 — Get it</a></div>
-    </div>
-    <div class="card">
-      <span class="tag">Pet business</span>
-      <h3>Pet Care Business Starter Kit</h3>
-      <p>Launch pet-sitting / dog-walking: pricing calculator, client agreement, intake forms, insurance checklist.</p>
-      <div class="row"><a class="buy" href="https://www.getly.store/product/pet-care-business-starter-kit">$24 — Get it</a></div>
-    </div>
-  </div>
-</div>
-
-<div class="wrap" id="samples">
-  <h2>Free samples on GitHub</h2>
-  <p class="sub">Real working excerpts from our kits — free forever. Each links to the full version.</p>
-  <div class="grid">
-    <div class="card">
-      <h3>Solopreneur Tax &amp; Admin Readiness</h3>
-      <p>Quarterly tax-prep checklist for one-person businesses.</p>
-      <div class="row">
-        <a class="free" href="https://github.com/fexo9/solopreneur-tax-admin-readiness-kit">Free sample</a>
-        <a class="buy" href="https://www.getly.store/product/solopreneur-tax-admin-readiness-kit">Full kit</a>
-      </div>
-    </div>
-    <div class="card">
-      <h3>STR Host Fee-Reset Pricing</h3>
-      <p>Gross-up calculator (Excel) for short-term rental hosts.</p>
-      <div class="row">
-        <a class="free" href="https://github.com/fexo9/str-host-fee-reset-pricing-kit">Free sample</a>
-        <a class="buy" href="https://www.getly.store/product/str-host-fee-reset-pricing-kit">Full kit</a>
-      </div>
-    </div>
-    <div class="card">
-      <h3>Tenant Screening &amp; Fraud Defense</h3>
-      <p>Fake-document red-flag checklist for landlords.</p>
-      <div class="row">
-        <a class="free" href="https://github.com/fexo9/tenant-screening-rental-fraud-defense-kit">Free sample</a>
-        <a class="buy" href="https://www.getly.store/product/tenant-screening-rental-fraud-defense-kit">Full kit</a>
-      </div>
-    </div>
-    <div class="card">
-      <h3>Agency Client Retention System</h3>
-      <p>30/60/90 check-in scripts + QBR template.</p>
-      <div class="row">
-        <a class="free" href="https://github.com/fexo9/agency-client-retention-system">Free sample</a>
-        <a class="buy" href="https://www.getly.store/product/agency-client-retention-system">Full kit</a>
-      </div>
-    </div>
-    <div class="card">
-      <h3>Freelancer Rate &amp; Pricing Calculator</h3>
-      <p>Underpricing audit checklist for freelancers.</p>
-      <div class="row">
-        <a class="free" href="https://github.com/fexo9/freelancer-rate-pricing-calculator-kit">Free sample</a>
-        <a class="buy" href="https://www.getly.store/product/freelancer-rate-pricing-calculator-kit">Full kit</a>
-      </div>
-    </div>
-    <div class="card">
-      <h3>Creator Brand-Deal Rate Card</h3>
-      <p>Contract clause checklist for creators.</p>
-      <div class="row">
-        <a class="free" href="https://github.com/fexo9/creator-brand-deal-rate-card-pack">Free sample</a>
-        <a class="buy" href="https://www.getly.store/product/creator-brand-deal-rate-card-pack">Full kit</a>
-      </div>
-    </div>
-    <div class="card">
-      <h3>AI Output QA &amp; Audit Toolkit</h3>
-      <p>Pre-delivery QA checklist — audit AI work before it ships.</p>
-      <div class="row">
-        <a class="free" href="https://github.com/fexo9/ai-output-qa-audit-toolkit">Free sample</a>
-        <a class="buy" href="https://www.getly.store/product/ai-output-qa-audit-toolkit">Full kit</a>
-      </div>
-    </div>
-    <div class="card">
-      <h3>Proposal &amp; Contract Kit</h3>
-      <p>5 follow-up email templates that close deals.</p>
-      <div class="row">
-        <a class="free" href="https://github.com/fexo9/proposal-contract-kit">Free sample</a>
-        <a class="buy" href="https://www.getly.store/product/proposal-contract-kit">Full kit</a>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="wrap">
-  <h2>Stores</h2>
-  <p class="sub">Pick your checkout:</p>
-  <div class="stores">
-    <a href="https://www.getly.store">Getly — main store</a>
-    <a href="https://digitaltoolkitstore.sell.app">SellApp — crypto checkout</a>
-    <a href="https://t.me/Digitaltoolkitstore">Telegram channel</a>
-  </div>
+<h1>Digital Toolkit Store</h1>
+<p class="tag">Real tools for real problems.</p>
+<p style="color:#b9aac8;max-width:640px;margin:14px auto 0">Decision systems, Excel toolkits and document kits for freelancers, small businesses and subcontractors. Every claim verified. Every limit stated. No fake reviews, ever.</p>
+</div>
+</header>
+<main class="wrap">
+<section class="promise">
+<div><h2>No illusions</h2><p>Every number on a listing is verified against a real source. No invented stats, no fake proof.</p></div>
+<div><h2>No incomplete products</h2><p>Every product passes an independent file test before it goes on sale. If it fails, it does not ship.</p></div>
+<div><h2>No cheating</h2><p>No fake reviews, no fake sales, no guarantees we cannot keep. What you read is what you get.</p></div>
+</section>
+
+<h2 class="sec">Products</h2>
+<p class="sub">One-time purchases. No subscriptions. Every listing carries a free sample or demo video and an honest limits note.</p>
+<div class="grid">
+<div class="card"><h3>Subcontractor Pay-App &amp; Retainage System</h3><p>Pay applications, retainage release, lien deadlines with alerts, and a cash-flow gap — 11 languages.</p><div class="price">$39 one-time</div><a class="btn" href="https://www.getly.store/product/subcontractor-pay-application-retainage-release-system">View on Getly</a></div>
+<div class="card"><h3>Scope-Lock</h3><p>Locks scope, deposit, revision limits and change-order pricing in writing before work starts.</p><div class="price">$29 one-time</div><a class="btn" href="https://www.getly.store/product/scope-lock-client-onboarding-change-order-system">View on Getly</a></div>
+<div class="card"><h3>STR Host Damage-Claim Evidence Packet</h3><p>Document a damage claim properly: photos, inventory, receipts and a clean claim file.</p><div class="price">$19 one-time</div><a class="btn" href="https://www.getly.store/product/str-host-damage-claim-evidence-packet">View on Getly</a></div>
+<div class="card"><h3>STR Evidence Packet — Team License (10 seats)</h3><p>The STR packet for property-management teams: 10 named seats, one company, tracker included.</p><div class="price">$79 one-time</div><a class="btn" href="https://www.getly.store/product/str-evidence-packet-team-license-10-seats">View on Getly</a></div>
+<div class="card"><h3>Invoice Chase &amp; Late-Payment Recovery</h3><p>Follow up on unpaid invoices without sounding desperate — 11 languages, 5 chase stages.</p><div class="price">$24 one-time</div><a class="btn" href="https://www.getly.store/product/invoice-chase-late-payment-recovery-system-5-language-collection-kit">View on Getly</a></div>
+<div class="card"><h3>Bad-Client Triage &amp; Firing System</h3><p>Score a client, decide FIX or FIRE, and walk away cleanly when the numbers say so.</p><div class="price">$29 one-time</div><a class="btn" href="https://www.getly.store/product/bad-client-triage-firing-system">View on Getly</a></div>
+<div class="card"><h3>Ad Kill-or-Scale Decision System</h3><p>Kill or scale an ad on the numbers — no gut feeling, no sunk-cost excuses.</p><div class="price">$29 one-time</div><a class="btn" href="https://www.getly.store/product/ad-kill-or-scale-decision-system">View on Getly</a></div>
+<div class="card"><h3>Promo Margin Guard</h3><p>Check a discount against your real margin before it eats your profit.</p><div class="price">$24 one-time</div><a class="btn" href="https://www.getly.store/product/promo-margin-guard">View on Getly</a></div>
+<div class="card"><h3>Freelancer Pricing Confidence System</h3><p>Price your work from a floor, a target and a premium — and know which one you are quoting.</p><div class="price">$19 one-time</div><a class="btn" href="https://www.getly.store/product/freelancer-pricing-confidence-system-5-language-pricing-decision-kit-en-fr-es-it">View on Getly</a></div>
+<div class="card"><h3>Dead-Stock Cash Recovery System</h3><p>Turn dead stock back into cash: rank it, price it, clear it.</p><div class="price">$24 one-time</div><a class="btn" href="https://www.getly.store/product/dead-stock-cash-recovery-system">View on Getly</a></div>
+<div class="card"><h3>Shop Inventory &amp; Sales Manager</h3><p>Bilingual (EN + AR) inventory and sales workbook with invoice generator.</p><div class="price">$24 one-time</div><a class="btn" href="https://www.getly.store/product/shop-inventory-sales-manager-bilingual-excel-toolkit-en-ar">View on Getly</a></div>
+<div class="card"><h3>Small Business Finance Dashboard</h3><p>Bilingual (EN + AR) finance dashboard: revenue, costs, unpaid invoices, net — at a glance.</p><div class="price">$24 one-time</div><a class="btn" href="https://www.getly.store/product/small-business-finance-dashboard-bilingual-excel-toolkit-en-ar">View on Getly</a></div>
 </div>
 
-<footer>
-  Digital Toolkit Store — practical tools, honest pricing.<br>
-  Free samples are free to use · Full kits are paid products (see each listing for license).
-</footer>
+<div class="note"><b>Also on SellApp</b> — every product is also listed on our SellApp store with USDT checkout: <a href="https://digitaltoolkitstore.sell.app">digitaltoolkitstore.sell.app</a>. Free samples live on each product's GitHub page.</div>
 
+<h2 class="sec">Contact</h2>
+<p class="sub">Questions about a product? Reach us here — a human answers.</p>
+<p><a href="https://t.me/Digitaltoolkitstore">Telegram: @Digitaltoolkitstore</a> &nbsp;·&nbsp; <a href="mailto:poodepoo@gmail.com">poodepoo@gmail.com</a></p>
+</main>
+<footer>© 2026 Digital Toolkit Store · Real tools for real problems.</footer>
 </body>
 </html>
